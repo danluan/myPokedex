@@ -20,7 +20,9 @@
     left: 5%;
     height: 50px;
 }
-
+.myPokedex-logo {
+    width: 230px;
+}
 .footer {
     bottom: 0;
     position: fixed;
@@ -34,11 +36,13 @@
     font-size: 10px;
 }
 .footer a {
+    border-bottom: white solid 2px;
     transition: 100ms;
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
 }
 .footer a:hover{
+    border-color: black;
     transition: 200ms;
     color: black;
 }

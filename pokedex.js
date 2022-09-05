@@ -1,4 +1,4 @@
-const pokemonCount = 151
+const pokemonCount = 151 //151 firsts pokemons
 
 var pokedex = {} // {name: "bulbasaur", type: ['grass'], img: "url image"}
 
