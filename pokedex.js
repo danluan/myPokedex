@@ -18,7 +18,7 @@ async function printPokedex() {
 
         next.getElementsByClassName("name")[0].innerHTML = pokedex[i]["name"].toUpperCase();
         next.getElementsByClassName("poke-img")[0].src = pokedex[i]["pokemonImg"];
-
+        next.getElementsByClassName("poke-id")[0].innerHTML = "#" + i.toString().padStart(3, "0");;
         let typesDiv = next.getElementsByClassName("poke-types")[0];
         
         while (typesDiv.firstChild) {
@@ -48,11 +48,9 @@ async function getPokemon(num){
     let response = await fetch(url);
     let pokemon = await response.json();
 
-    //console.log(pokemon);
     let pokemonName = pokemon["name"];
     let pokemonTypes = pokemon["types"];
     let pokemonImg = pokemon["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
 
     pokedex[num] = {"name": pokemonName, "types": pokemonTypes, "pokemonImg": pokemonImg};
-
 }

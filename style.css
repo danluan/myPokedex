@@ -14,6 +14,11 @@
     background-color: #C22E28;
     color: white;
 }
+.pokeball-logo {
+    position: absolute;
+    left: 5%;
+    height: 50px;
+}
 
 .footer {
     bottom: 0;
@@ -23,9 +28,9 @@
     align-items: center;
     justify-content: center;
     background-color: #C22E28;
-    padding: 2rem;
+    padding: 1rem;
     color: white;
-    font-size: 22px;
+    font-size: 10px;
 }
 .footer a {
     transition: 100ms;
@@ -41,6 +46,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,4fr));
     padding: 0% 5%;
+    padding-bottom: 5rem;
 }
 
 .pokemon-card {
@@ -59,9 +65,15 @@
     image-rendering: pixelated;
 }
 
+.poke-id {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
 .poke-types {
     margin-top: 8px;
     color: white;
+    font-weight: 800;
     display: block;
 }
 .type {
